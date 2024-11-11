@@ -36,7 +36,7 @@ function findAbortListener(emitter, eventName, handler, options) {
 // instead leak a small, fixed amount of data, which is a much better outcome.
 //
 // The normal options 'capture', 'signal', and 'passive' are supported. The
-// 'once' option currently leaks a small, fixed amount of data.
+// 'once' option is not yet supported.
 //
 // To unregister, you cannot call removeEventListener; you must call unlisten
 // or use an AbortSignal.
