@@ -1,7 +1,7 @@
 # weak-listen
 A less leak-prone way to manage event listeners
 ## Background
-By far the most common source of memory leaks I've seen is components that call `addEventListener` and forget to call `removeEventListener`. This repository is an exploration of a different event listening strategy which wouldn't leak giant amounts of memory if you hold it wrong.
+By far the most common source of memory leaks I've seen is components that call `addEventListener` and forget to call `removeEventListener`. This repository is an exploration of a different event listening strategy which wouldn't leak giant amounts of memory if you hold it wrong. ("An exploration" means "mostly untested and probably incorrect".)
 ## Pros
 * Avoid a major source of leaks
 * Simple, drop-in replacement for `addEventListener` supports the same options
